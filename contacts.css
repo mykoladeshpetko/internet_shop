@@ -1,0 +1,237 @@
+* {
+  margin: 0px;
+}
+.hamburger-menu {
+  margin: 15px;
+}
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+  transition-duration: 0.25s;
+}
+.menu__btn > span::before {
+  content: "";
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+
+.menu__box {
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 150px;
+  height: 30%;
+  margin: 0;
+  padding: 70px 0;
+  list-style: none;
+  background-color: #46a3e0;
+  box-shadow: 5px 0px 6px rgba(0, 0, 0, 0.4);
+  transition-duration: 0.25s;
+}
+
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
+.menu__item:hover {
+  background-color: #cfd8dc;
+}
+
+.card_1 {
+  background-color: rgb(236, 202, 138);
+  margin: 4px;
+  border-radius: 10px;
+  width: 100%;
+  padding-left: 2px;
+}
+.card_2 {
+  background-color: rgb(162, 210, 30);
+  width: 100%;
+  margin: 4px;
+  border-radius: 10px;
+}
+.adress {
+  display: flex;
+  box-sizing: border-box;
+  background-color: rgb(236, 202, 138);
+  border-radius: 10px;
+}
+a:hover {
+  font-size: large;
+  color: blue;
+  transition: all 2s;
+}
+.card_1 img {
+  margin-left: 2px;
+}
+.drive a {
+  text-decoration: none;
+}
+h3 {
+  color: rgb(134, 53, 53);
+  text-align: center;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.drive {
+  display: flex;
+  background-color: rgb(236, 202, 138);
+  border-radius: 10px;
+}
+.drive ul {
+  list-style: none;
+}
+.container {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  height: 195vh;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(116, 80, 28);
+  font-weight: bold;
+  background-color: rgb(152, 152, 233);
+  padding-top: 2px;
+  padding-right: 2px;
+}
+.drive a {
+  align-self: flex-start;
+}
+.container img {
+  width: 5%;
+}
+.contact {
+  display: flex;
+  background-color: rgb(162, 210, 30);
+  border-radius: 10px;
+  margin-left: 5px;
+  align-items: center;
+}
+.contact li {
+  list-style: none;
+}
+.work {
+  display: flex;
+  background-color: rgb(162, 210, 30);
+  border-radius: 10px;
+  margin-left: 20px;
+  margin: 3px;
+  align-items: center;
+}
+.work ul {
+  list-style: none;
+}
+.work img {
+  width: 5%;
+  margin-left: 2px;
+}
+.work dl {
+  align-self: stretch;
+}
+.row {
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+  justify-content: space-between;
+}
+.call_back {
+  background-color: rgb(240, 205, 130);
+  border-radius: 10px;
+  margin-top: 2px;
+  margin-left: 4px;
+}
+.call_back form label {
+  display: block;
+  margin-left: 5px;
+}
+.call_back form input,
+.call_back form textarea {
+  width: 100%;
+  border: none;
+  box-sizing: border-box;
+  background: transparent;
+  border-bottom: 1px solid rgb(30, 150, 90);
+  color: black;
+  padding: 10px 0px 10px;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+.form {
+  margin-left: 2px;
+}
+.btn {
+  margin-left: 20px;
+  animation: glowing infinite 2000ms;
+  align-self: center;
+  margin-bottom: 20px;
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgba(220, 0, 0, 1);
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+.btn:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}

@@ -1,0 +1,80 @@
+.nav {
+  display: flex;
+  background-color: rgb(73, 11, 102);
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bolder;
+  color: white;
+  width: 100%;
+  position: relative;
+  gap: 5px;
+}
+.logo {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  margin: 15px;
+  color: inherit;
+  position: absolute;
+  right: 50px;
+  top: -8px;
+}
+@media screen and (max-width: 650px) {
+  #nav a {
+    position: absolute;
+    left: -110px;
+    transition: 0.5s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    font-size: small;
+  }
+  .logo {
+    position: absolute;
+    left: -150px;
+    height: 70px;
+    width: 70px;
+    text-decoration: none;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 0 20px rgba(150, 0, 20, 0.7);
+  }
+
+  #nav a:hover {
+    left: 0;
+  }
+  #logo {
+    top: 1px;
+    margin-left: 20px;
+  }
+  #Home {
+    top: -110px;
+    background-color: #04aa6d;
+  }
+
+  #FC {
+    top: 20px;
+    background-color: #2196f3;
+  }
+
+  #FD {
+    top: 60px;
+    background-color: #f44336;
+  }
+  #Contact {
+    top: 100px;
+    background-color: #c1d416;
+  }
+}
+.nav a:hover,
+.dropdown:hover {
+  background-color: rgb(107, 70, 209);
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  text-align: center;
+  padding: 14px 16px;
+}
