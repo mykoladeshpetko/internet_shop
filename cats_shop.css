@@ -8,12 +8,13 @@
 }
 .flex-container {
   display: inline-block;
+  height: 100vh;
 
   /* background-color: #9febe1; */
 }
 body {
-  background-image: url(01_background.jpg);
-  background-size: 180%;
+  background: #d0e074;
+  /* background-size: 180%; */
 }
 .hamburger-menu {
   margin: 15px;
@@ -120,7 +121,7 @@ body {
 .card:hover {
   opacity: 0.7;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
   body {
     background-size: 400%;
   }
@@ -128,8 +129,13 @@ body {
     width: 45%;
   }
   .main {
-    margin-left: 35px;
+    margin-left: 20px;
     padding: 5px;
+  }
+  .flex-container {
+    margin-bottom: 10px;
+    width: 100%;
+    margin-top: 0px;
   }
 }
 
